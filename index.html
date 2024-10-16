@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+  <!-- Products Section -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-4xl font-bold mb-4 text-center">OUR BEST PRODUCTS</h2>
+
+    <div id="product-list" class=" max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Shopping Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <h3 class="text-xl font-bold uppercase">samsung galaxy 360 book 2 pro</h3>
+        <img class="size-64 rounded-md" src="https://eziona.com/cdn/shop/products/DP-NP930_f218f2ad-4559-45bb-8e8f-cc3320195b06_2048x.jpg?v=1674296657" alt="">
+        <p class="text-gray-700 underline font-semibold text-lg">$1500</p>
+        <button id="add-to-cart-1" class="bg-blue-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-blue-800 font-bold text-lg" >Add to Cart</button>
+        <button id="remove-from-cart-1" class="bg-red-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-red-800 font-bold text-lg">Remove from Cart</button>
+      </div>
+
+      <!-- Shopping Card 2 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <h3 class="text-xl font-bold uppercase">Iphone 13 Pro max</h3>
+        <img class="size-72 rounded-md" src="https://www.mymac.dz/wp-content/uploads/2021/12/iphone-13-pro-argent.jpg" alt="">
+        <p class="text-gray-700 underline font-semibold text-lg">$950</p>
+        <button id="add-to-cart-2" class="bg-blue-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-blue-800 font-bold text-lg" >Add to Cart</button>
+        <button id="remove-from-cart-2" class="bg-red-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-red-800 font-bold text-lg">Remove from Cart</button>
+      </div>
+
+      <!-- Shopping Card 3 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <h3 class="text-xl font-bold uppercase">Xbox series s</h3>
+        <img class="size-72 rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSyq-zD9eRggUTZibnV4k_ksluT3AX6u5uZw&s" alt="">
+        <p class="text-gray-700 underline font-semibold text-lg">$399</p>
+        <button id="add-to-cart-3"  class="bg-blue-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-blue-800 font-bold text-lg" >Add to Cart</button>
+        <button id="remove-from-cart-3" class="bg-red-500 text-white mt-4 px-4 py-2 rounded-lg hover:bg-red-800 font-bold text-lg">Remove from Cart</button>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4 text-center uppercase tracking-widest">Shopping Cart</h2>
+    
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <div id="cart-items" class="space-y-4">
+      
+      </div>
+
+      <div class="mt-2">
+        <p class="text-xl font-bold">Total Price: $<span class="underline" id="total-price">0.00</span></p>
+      </div>
+    </div>
+  </section>
+  
+ 
+    <script src="main.js"></script>
+</body>
+</html>
